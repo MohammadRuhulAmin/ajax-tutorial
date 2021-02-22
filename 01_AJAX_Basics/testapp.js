@@ -1,5 +1,3 @@
-
-
 let textButton = document.querySelector('#text-btn');
 
 
@@ -14,4 +12,3 @@ textButton.addEventListener('click',()=>{
         }
     };
 });
-// json data
