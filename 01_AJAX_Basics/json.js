@@ -7,9 +7,10 @@ jsonButton.addEventListener('click',()=>{
         if(xhr.status === 200){
             let data = xhr.responseText;
              document.querySelector('#json-card').innerHTML = `<h3>${data}</h3>`;
-             
+
             
         }
     };
 });
  
+
