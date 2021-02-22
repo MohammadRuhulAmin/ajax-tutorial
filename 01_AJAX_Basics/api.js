@@ -10,6 +10,9 @@ apiButton.addEventListener('click',function(){
         if(xhr.status === 200){
             let data = xhr.responseText;
             console.log(data);
+            let users = JSON.parse(data);
+            console.log(users);
+            displayUsers(users);
         }
         else console.log("error");
        
@@ -17,3 +20,17 @@ apiButton.addEventListener('click',function(){
     };
 
 });
+
+//display users
+let displayUsers = (users)=>{
+   let htmlTemplate = '';
+   for(let user of users){
+       htmlTemplate +=`<ul>
+                            <li>ID : ${user.id}</li>
+                            <li>Name ${user.name}</li>
+                            <li>Email ${user.email}</li>
+                            
+                       </ul>`
+        document.querySelector('#api-card').innerHTML = htmlTemplate;
+   } 
+}
