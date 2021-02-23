@@ -1,0 +1,25 @@
+{
+  "name": "ajax_tutorial",
+  "version": "1.0.0",
+  "description": "this is tutorial",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+   "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TNTx1995/ajax-tutorial.git"
+  },
+  "author": "ruhul amin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TNTx1995/ajax-tutorial/issues"
+  },
+  "homepage": "https://github.com/TNTx1995/ajax-tutorial#readme"
+}
